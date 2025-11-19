@@ -1,9 +1,7 @@
 const Database = require("better-sqlite3");
 
-// Create or open database file
 const db = new Database("actions.db");
 
-// Initialize table if not exists
 db.prepare(`
   CREATE TABLE IF NOT EXISTS actions (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
